@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "jquery": "^3.6.3"
+    "atropos": "^1.0.2",
+    "jquery": "^3.6.3",
+    "luxy.js": "^0.1.0"
   }
 }
