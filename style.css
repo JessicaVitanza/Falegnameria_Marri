@@ -322,24 +322,34 @@ section {
 }
 
 .card {
-    width: 290px;
-    height: 225px;
-    padding: 0.5rem;
-    background: rgba(198, 198, 198, 0.34);
-    border-radius: 8px;
     color: white;
     text-align: center;
+    overflow: hidden;
+  }
+
+  .card div {
+      width: fit-content;
+      height: fit-content;
+      overflow: hidden;
+      background: rgba(198, 198, 198, 0.34);
   }
   
   .card img {
-      width: 100%;
-      border-radius: 8px;
+      width: 350px;
+      transition: all .9s;
+      padding: 1rem;
+      margin: 0 0 -6px;
+      cursor: pointer;
   }
+
+  .card img:hover {
+    transform: scale(1.4);
+}
   
   .card a {
     margin: 1.3rem;
     font-weight: 600;
-    color: black;
+    color: whitesmoke;
     letter-spacing: 4px;
     font-size: 10px;
     text-transform: uppercase;
