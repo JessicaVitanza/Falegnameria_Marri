@@ -359,15 +359,33 @@ section {
   }
 
 
-  .whatsapp {
-      color: greenyellow;
+  .whatsapp img {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: #25D366;
+      animation: shadow-pulse 1s infinite;
   }
+
+  
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px #25d36539;
+  }
+  100% {
+    box-shadow: 0 0 0 16px #25d3651a;
+  }
+}
 
 
   #myVideo {
     position: fixed;
-    right: 0;
+    left: 150px;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
   }
+
+
