@@ -1,3 +1,5 @@
+// hero parallax
+
 window.addEventListener('scroll', () => {  
     let scrollTop = document.documentElement.scrollTop;        
     document.querySelector('.hero img').style.width = 100 + scrollTop / 10 + '%';
@@ -6,6 +8,7 @@ window.addEventListener('scroll', () => {
 
 
 
+// section on scroll
 
 const scrollElements = document.querySelectorAll(".box-intro");
 
@@ -48,3 +51,20 @@ window.addEventListener("scroll", () => {
   handleScrollAnimation();
 });
 
+
+
+    // expanding card
+    const panels = document.querySelectorAll('.panel')
+
+    panels.forEach((panel) => {
+        panel.addEventListener('click', () => {
+            removeActiveClasses()
+            panel.classList.add('active') 
+        })
+    })
+        
+    function removeActiveClasses() {
+        panels.forEach(panel => {
+            panel.classList.remove('active')
+        })
+     }
