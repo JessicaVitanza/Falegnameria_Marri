@@ -80,24 +80,25 @@
 </section>
 
 <h2 class="specialita">Specialità</h2>
+
 <div class="container__img">
     
-    <div class="panel active natura" style="background-image: url('./assets/DSC06767.jpg')">
+    <div class="panel active " style="background-image: url('./assets/DSC06767.jpg')">
       <h3>Paolo Marri <br> <span>il padre, il mastro falegname dell’azienda specializzato nella falegnameria classica. <br>
         Oltre 30 anni di esperienza nel campo dell’arredo su misura, porte, librerie mensole ecc ecc.
         Ristrutturazione e modifica di vecchi mobili 
         </span> </h3>
     </div>
-    <div class="panel sport" style="background-image: url('./assets/IMG_5663.JPG')">
+    <div class="panel " style="background-image: url('./assets/DSC06767.jpg')">
       <h3>Giulio Marri<br> <span>il figlio maggiore, sta imparando i segreti del mestiere, intanto si sta specializzando nella liuteria classica, in particolare nella costruzione del violino. <br> Nel frattempo si dedica alla costruzione di rullanti in quanto appassionato di musica e batterista del gruppo.
     </span></h3>
     </div>
-    <div class="panel viaggi" style="background-image: url('./assets/IMG_2811.jpg')">
+    <div class="panel " style="background-image: url('./assets/DSC06767.jpg')">
       <h3>Francesco Marri<br> <span>Oltre allo studio di Chitarra al Conservatorio di Perugia, si sta specializzando nella liuteria Classica in particolare nella costruzione di Chitarre ed Ukulele. <br>
         Chitarrista del gruppo musicale.
         </span></h3>
     </div>
-    <div class="panel piante" style="background-image: url('./assets/IMG_2824.JPG')">
+    <div class="panel " style="background-image: url('./assets/DSC06767.jpg')">
       <h3>Glauco Marri<br><span>Si è laureato in design con una tesi sull’ intarsio moderno e le sue applicazioni nell’ambito del design degli interni e della gioielleria. Ha sperimentato la tecnica di scultura lignea riproducendo in scala reale la sua mano. Si dedica inoltre al graphic design e alla scenografia per eventi musicali, lavori che coniugano le due passioni principali che sono appunto la musica e la progettazione artistica. </span></h3>
     </div>
 </div>
@@ -105,36 +106,83 @@
 <h2 class="specialita">CATEGORIE</h2>
 <div id="category" class="category">
     <div class="card">
-        <a class="card__title" href="./liuteria.html">LIUTERIA</a>
-        <p class="card__content">Rullanti, ukulele, violino . . . </p>
-        <img src="./assets/IMG_5557-removebg-preview.png" alt="">
+        <div>
+            <h2 class="card__title">LIUTERIA</h2>
+            <p class="card__content">Rullanti, ukulele, violino . . . </p>
+            <img src="./assets/IMG_5557-removebg-preview.png" alt="">
+        </div>
+        <button type= "button" id= "btn" onclick= "openLiuteria()">vai alla gallery</button>
+        <p class="p_hover">In questa sezione troverai rullanti, ukulele e violini</p>
+
     </div>
     
     <div class="card">
-        <a class="card__title" href="./intarsi.html">INTARSI</a>
-        <p class="card__content">Mano, Mirò . . . </p>
-        <img class="mano" src="./assets/IMG_2463-removebg-preview.png" alt="">
+        <div>
+            <h2 class="card__title" href="./intarsi.html">INTARSI</h2>
+            <p class="card__content">Mano, Mirò . . . </p>
+            <img class="mano" src="./assets/IMG_2463-removebg-preview.png" alt="">
+        </div>
+        <button type= "button" id= "btn" onclick= "openIntarsi()">vai alla gallery</button>
+        <p class="p_hover">In questa sezione troverai rullanti, ukulele e violini</p>
+
     </div>
+
     
     <div class="card">
-        <a class="card__title" href="./falegnameria.html">FALEGNAMERIA</a>
-        <p class="card__content">Lavabo . . . </p>
-        <img class="tavolo" src="./assets/20220903_132953-removebg-preview.png" alt="">
+        <div>
+            <h2 class="card__title" href="./falegnameria.html">ARREDO</h2>
+            <p class="card__content">Libreria, mensole . . . </p>
+            <img class="tavolo" src="./assets/20220903_132953-removebg-preview.png" alt="">
+        </div>
+        <button type= "button" id= "btn" onclick= "openFalegnameria()">vai alla gallery</button>
+        <p class="p_hover">In questa sezione troverai rullanti, ukulele e violini</p>
+
     </div>
-    </div>
+</div>
+
+
 
 <footer>
-
-    <a id="contact" class="whatsapp" target="_blank" href="https://wa.me/3404898158">
+    <a id="contact" class="whatsapp" target="_blank" href="https://wa.me/3463635318">
         <img src="./assets/WhatsApp-Logo.wine.svg" alt="">
       </a>
     
     <div class="social">
-            <span class="material-symbols-outlined">call</span>
-            <span class="material-symbols-outlined"> mail</span>
+            <a target="_blank" href="https://open.spotify.com/artist/2bYGc3LZ4KYcgH1HrpchfO?si=bgLg0oYdTX-EJdy5XlTuxQ&utm_source=copy-link&nd=1">
+                <lord-icon
+                src="https://cdn.lordicon.com/ryodbtwr.json"
+                trigger="hover"
+                colors="primary:#000000,secondary:#5c330a,tertiary:#e3c0ac,quaternary:#f2e2d9"
+                style="width:140px;height:140px">
+                </lord-icon>
+            </a>
+
+            <a href="mailto:falegnameriamarri@gmail.com">
+                <lord-icon
+                src="https://cdn.lordicon.com/iepbfivp.json"
+                trigger="hover"
+                colors="primary:#d59f80,secondary:#e4e4e4,tertiary:#ebe6ef"
+                style="width:140px;height:140px">
+                </lord-icon>
+            </a>
     </div>
 </footer>
 
 </body>
 <script src="./script.js"  type="text/javascript"></script>
+<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+
+<script>
+    function openLiuteria(){
+    window.open("./liuteria.html", "_self")
+   }
+
+   function openIntarsi(){
+    window.open("./intarsi.html", "_self")
+   }
+
+   function openFalegnameria(){
+    window.open("./falegnameria.html", "_self")
+   }
+</script>
 </html>
